@@ -15,11 +15,7 @@ const MenuPage = () => {
           <FaHeart className="icon" title="Love" />
         </div>
       </section>
-
-      <section className="menu-items">
-        {}
         <DataFetcher />
-      </section>
     </div>
   );
 };
