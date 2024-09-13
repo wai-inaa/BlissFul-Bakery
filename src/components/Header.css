@@ -1,17 +1,9 @@
-/* Global reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+
   body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
     color: #333;
   }
-  
-  /* Header Styling */
   .header {
     width: 100%;
     padding: 20px 40px;
@@ -28,9 +20,8 @@
   .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #FF5A5F; /* Branded color for the logo */
+    color: #FF5A5F; 
   }
-  
   .navbar {
     flex-grow: 1;
     display: flex;
@@ -55,8 +46,6 @@
     color: #FF5A5F;
     border-bottom: 2px solid #FF5A5F;
   }
-  
-  /* Buttons (Login, Signup, Logout) */
   .header-buttons {
     display: flex;
     gap: 1rem;
@@ -108,8 +97,6 @@
     font-weight: bold;
     margin: 0;
   }
-  
-  /* Modal Overlay */
   .modal-overlay {
     position: fixed;
     top: 0;
@@ -121,8 +108,6 @@
     justify-content: center;
     align-items: center;
   }
-  
-  /* Modal Content */
   .modal {
     background-color: white;
     padding: 2rem;
@@ -153,8 +138,6 @@
     border: 1px solid #ddd;
     border-radius: 5px;
   }
-  
-  /* Button Styling */
   .btn {
     display: inline-block;
     background-color: #FF5A5F;
@@ -177,8 +160,6 @@
   .close-btn:hover {
     background-color: #bbb;
   }
-  
-  /* Styled Header Buttons */
   .header-buttons p {
     font-size: 1.2rem;
     color: #333;

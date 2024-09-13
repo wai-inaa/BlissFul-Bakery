@@ -73,7 +73,6 @@
     margin: 0;
   }
   
-  
   @media (max-width: 768px) {
     .features-list {
       flex-direction: column;

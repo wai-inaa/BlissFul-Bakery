@@ -8,16 +8,14 @@ import Footer from './components/Footer';
 import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
 import { AppProvider } from './components/Context'; 
-import './App.css'; // Add global CSS to handle dark/light mode
-
 const App = () => {
   return (
     <AppProvider>
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<><Main /><Features /></>} />
-          <Route path="/menu" element={<Menu />} />
+          <Route path="/" element={<><Main /><Features /></>} /> {}
+          <Route path="/menu" element={<Menu />} /> {}
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
@@ -26,5 +24,4 @@ const App = () => {
     </AppProvider>
   );
 };
-
 export default App;

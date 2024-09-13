@@ -1,8 +1,7 @@
 import React from 'react';
-import './Menu.css'; // Ensure this path is correct
-import { FaBirthdayCake, FaCoffee, FaUtensils, FaStar, FaHeart } from 'react-icons/fa'; // Ensure icons are installed
-import DataFetcher from './DataF'; // Import DataFetcher
-
+import './Menu.css'; 
+import { FaBirthdayCake, FaCoffee, FaUtensils, FaStar, FaHeart } from 'react-icons/fa'; 
+import DataFetcher from './DataF'; 
 const MenuPage = () => {
   return (
     <div className="menu-page">
@@ -18,11 +17,10 @@ const MenuPage = () => {
       </section>
 
       <section className="menu-items">
-        {/* Use DataFetcher to get and display menu items */}
+        {}
         <DataFetcher />
       </section>
     </div>
   );
 };
-
 export default MenuPage;

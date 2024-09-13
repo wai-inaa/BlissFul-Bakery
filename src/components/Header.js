@@ -1,26 +1,21 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useAppContext } from './Context'; // Import the context
+import { useAppContext } from './Context'; 
 import './Header.css';
-
 const Header = () => {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
-  const { state, dispatch } = useAppContext(); // Use context
-
+  const { state, dispatch } = useAppContext(); 
   const openLoginModal = () => setIsLoginOpen(true);
   const closeLoginModal = () => setIsLoginOpen(false);
-
   const handleLogin = (e) => {
     e.preventDefault();
     const name = e.target.elements.name.value;
-    dispatch({ type: 'LOGIN', payload: name }); // Dispatch login action
+    dispatch({ type: 'LOGIN', payload: name }); 
     setIsLoginOpen(false);
   };
-
   const handleLogout = () => {
-    dispatch({ type: 'LOGOUT' }); // Dispatch logout action
+    dispatch({ type: 'LOGOUT' }); 
   };
-
   return (
     <header className="header">
       <div className="logo">Blissful Bites Bakery</div>
@@ -32,7 +27,6 @@ const Header = () => {
           <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
-
       <div className="header-buttons">
         {state.isLoggedIn ? (
           <div className="welcome-message">
@@ -45,7 +39,6 @@ const Header = () => {
           </>
         )}
       </div>
-
       {isLoginOpen && (
         <div className="modal-overlay">
           <div className="modal">
@@ -72,5 +65,4 @@ const Header = () => {
     </header>
   );
 };
-
 export default Header;

@@ -1,13 +1,11 @@
-// File: Features.js
 import React from 'react';
-import './Features.css'; // Importing the CSS file for styles
+import './Features.css'; 
 import img2 from './images/img2.jpeg';
 import img3 from './images/img3.jpg';
 import img4 from './images/img4.png';
 import img5 from './images/img5.png';
 import img9 from './images/img9.jpg';
 import baking from './images/baking.png';
-
 const Features = () => {
   return (
     <div className="features-container">
@@ -17,7 +15,6 @@ const Features = () => {
             We specialize in crafting delicious pastries, cakes, cookies, and cupcakes using the finest ingredients. Each treat is made with love to bring a smile to your face. Indulge in the bliss of our delightful confections and make every occasion sweeter with Blissful Bites Bakery!
         </p>
       </section>
-
       <div className="features-list">
         <div className="feature-item">
           <img src={img2} alt="Quality Baking" className="feature-image" />
@@ -46,5 +43,4 @@ const Features = () => {
     </div>
   );
 };
-
 export default Features;

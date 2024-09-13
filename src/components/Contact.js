@@ -1,6 +1,5 @@
 import React from 'react';
-import './Contact.css'; // Importing the CSS file for styles
-
+import './Contact.css'; 
 const ContactPage = () => {
   return (
     <div className="contact-page">
@@ -48,5 +47,4 @@ const ContactPage = () => {
     </div>
   );
 };
-
 export default ContactPage;

@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import './Menu.css'; // Ensure this is correctly linked to apply styles
-
+import './Menu.css'; 
 const DataFetcher = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
   useEffect(() => {
     fetch('https://my.api.mockaroo.com/bissful-bakery-items.json?key=1c1db980')
       .then(response => response.json())
       .then(data => {
-        console.log('Fetched data:', data); // Check the response structure
+        console.log('Fetched data:', data); 
         if (Array.isArray(data)) {
           setData(data);
         } else {
@@ -42,5 +40,4 @@ const DataFetcher = () => {
     </div>
   );
 };
-
 export default DataFetcher;
