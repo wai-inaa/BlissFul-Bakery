@@ -1,7 +1,6 @@
 import React from 'react';
 import './AboutUs.css'; 
 import bakeryImage from './images/bakery.jpg'; 
-import growthImage from './images/growth.jpg';
 import teamImage from './images/team.jpg';
 import mission from './images/mission.jpg';
 const AboutUs = () => {
