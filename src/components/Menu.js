@@ -6,7 +6,7 @@ const MenuPage = () => {
   return (
     <div className="menu-page">
       <section className="menu-hero">
-        <h1>Our Menu</h1>
+        <h1 className="display-4 mb-4">Our Menu</h1>
         <div className="icon-container">
           <FaBirthdayCake className="icon" title="Cakes" />
           <FaCoffee className="icon" title="Coffee" />
@@ -15,7 +15,9 @@ const MenuPage = () => {
           <FaHeart className="icon" title="Love" />
         </div>
       </section>
+      <div className="container">
         <DataFetcher />
+      </div>
     </div>
   );
 };

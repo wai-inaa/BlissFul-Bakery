@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from './components/Main';
 import Menu from './components/Menu';
@@ -13,12 +14,14 @@ const App = () => {
     <AppProvider>
       <Router>
         <Header />
-        <Routes>
-          <Route path="/" element={<><Main /><Features /></>} /> {}
-          <Route path="/menu" element={<Menu />} /> {}
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<><Main /><Features /></>} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
         <Footer />
       </Router>
     </AppProvider>
